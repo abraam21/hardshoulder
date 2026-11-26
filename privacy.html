@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashcut Privacy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0 auto; padding:40px 22px 80px; max-width:680px;
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  h1 { font-size:30px; margin:0 0 6px; }
+  h2 { font-size:19px; margin:34px 0 8px; }
+  .sub { opacity:.6; margin:0 0 30px; }
+  .note { opacity:.6; font-size:14px; margin-top:44px; }
+  a { color:#2f7df6; }
+</style>
+</head>
+<body>
+<h1>Dashcut privacy</h1>
+<p class="sub">Last updated 25 November 2026</p>
+
+<p>Dashcut is a viewer for footage recorded by your own comma device. The
+short version: Dashcut collects nothing about you, and sends nothing
+anywhere except to comma, on your behalf.</p>
+
+<h2>What Dashcut stores</h2>
+<p>When you sign in, comma gives the app a sign-in token. That token is kept
+in the iOS keychain on your phone and nowhere else. Signing out deletes it.
+Dashcut does not create an account of its own and has no server.</p>
+
+<h2>What Dashcut sends, and where</h2>
+<p>Dashcut talks only to comma's own services at <code>api.comma.ai</code> and
+<code>athena.comma.ai</code>, using your token, to list your drives, play
+them back, and ask your device for a clip. What you do in the app is covered
+by <a href="https://comma.ai/privacy">comma's privacy policy</a>. Nothing is
+sent to the developer of Dashcut.</p>
+
+<h2>Your footage</h2>
+<p>Video and position data are downloaded to your phone to show you a drive
+and to build a clip. Clips you export are written to your photo library
+because you asked for them. None of it leaves your phone unless you share it
+yourself.</p>
+
+<h2>Analytics and tracking</h2>
+<p>There are none. No analytics, no advertising, no crash reporting, no
+third-party software development kits, no identifiers for tracking.</p>
+
+<h2>Children</h2>
+<p>Dashcut is not aimed at children and collects nothing from anyone.</p>
+
+<h2>Deleting your data</h2>
+<p>Signing out removes the token from your phone. Deleting the app removes
+everything Dashcut has stored. Your drives belong to your comma account, so
+delete those at <a href="https://connect.comma.ai">connect.comma.ai</a>.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes with it.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="https://github.com/abraam21/dashcut/issues">open an issue on GitHub</a></p>
+
+<p class="note">Dashcut is an independent app. It is not made by, endorsed by,
+or affiliated with comma.ai. comma and openpilot are trademarks of their
+owner.</p>
+</body>
+</html>

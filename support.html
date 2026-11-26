@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashcut Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0 auto; padding:40px 22px 80px; max-width:680px;
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  h1 { font-size:30px; margin:0 0 6px; }
+  h2 { font-size:19px; margin:32px 0 8px; }
+  .sub { opacity:.6; margin:0 0 30px; }
+  .note { opacity:.6; font-size:14px; margin-top:44px; }
+  a { color:#2f7df6; }
+  code { background:rgba(127,127,127,.16); padding:1px 5px; border-radius:4px; }
+</style>
+</head>
+<body>
+<h1>Dashcut support</h1>
+<p class="sub">Dashcam clips from your comma drives.</p>
+
+<h2>What you need</h2>
+<p>A comma device paired to a comma account, and an iPhone or iPad on iOS 18
+or newer. You can look around a demo drive without any of that: tap
+<em>Look around a demo drive</em> on the first screen.</p>
+
+<h2>Signing in</h2>
+<p>Use the same account you use at connect.comma.ai, through GitHub, Google
+or Apple. Dashcut never sees your password.</p>
+
+<h2>Making a clip</h2>
+<p>Open a drive, drag the two handles on the timeline to the stretch you
+want, and press Export. You can take the three cameras together, stacked one
+above the other, or any one of them on its own. Clips land in your photo
+library.</p>
+
+<h2>Two ways to get the footage</h2>
+<p><strong>My comma</strong> asks the device to encode the clip itself and
+send it over. It is quick and uses hardly any data, but the comma has to be
+awake and online, on software 0.11.2 or newer.</p>
+<p><strong>comma's servers</strong> builds the clip from what comma has
+already uploaded. It works with the car parked, but it is a large download,
+roughly 37 MB a minute for each camera.</p>
+
+<h2>There is no sound on my clip</h2>
+<p>openpilot only records the microphone into its small preview file, and
+only when the microphone setting is on. Turn on <em>Record Microphone</em> in
+your comma's settings and later drives will have audio. Drives recorded
+before that will not.</p>
+
+<h2>A drive says nothing has uploaded</h2>
+<p>comma uploads a small preview of every drive once the device is online.
+Full quality footage stays on the device until something asks for it. Use
+<em>My comma</em> as the source, or request an upload in comma connect and
+try again later.</p>
+
+<h2>Something else</h2>
+<p>Write to <a href="https://github.com/abraam21/dashcut/issues">open an issue on GitHub</a>, and say what you
+were doing and which comma you have.</p>
+
+<p class="note">Dashcut is an independent app. It is not made by, endorsed by,
+or affiliated with comma.ai. comma and openpilot are trademarks of their
+owner.</p>
+</body>
+</html>
